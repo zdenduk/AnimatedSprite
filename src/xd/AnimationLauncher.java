@@ -26,7 +26,7 @@ public class AnimationLauncher extends Application {
         //Canvas canvas = new Canvas(320, 320);
         //root.getChildren().add(canvas);
 
-        List<Image> runAnim = new ArrayList<>();
+        /*List<Image> runAnim = new ArrayList<>();
         runAnim.add(new Image("elf_m_run_anim_f0.png"));
         runAnim.add(new Image("elf_m_run_anim_f1.png"));
         runAnim.add(new Image("elf_m_run_anim_f2.png"));
@@ -35,11 +35,9 @@ public class AnimationLauncher extends Application {
         Image[] frames = new Image[4];
         for (int i = 0; i < frames.length; i++) {
             frames[i] = new Image("elf_m_run_anim_f" + i + ".png", 64, 112, true, false);
-        }
+        }*/
 
-        AnimatedImage hero = new AnimatedImage();
-        hero.frames = frames;
-        hero.duration = 0.100;
+        AnimatedImage hero = new AnimatedImage(SpriteUtil.ELF_M_RUN, 4, 0.100);
 
         List<Image> map = new ArrayList<>();
         map.add(new Image("floor_3.png", 64, 64, true, false));
